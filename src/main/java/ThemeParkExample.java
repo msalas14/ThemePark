@@ -33,7 +33,8 @@ public class ThemeParkExample {
         /*
         *   below uses the methods from each class to perform the actions from the instructions
         *   but this is done randomly
-        *   you can manually call the methods by calling the theme park object, then the desired array list, and choose an index from the array list
+        *   you can manually call the methods by calling the theme park object, then the desired array list,
+        *   and choose an index from the array list to represent a customer, employee, or ride
         *   after specifying the object you can call the methods
          */
         int randomChoice = 0, otherRandomChoice = 0;
