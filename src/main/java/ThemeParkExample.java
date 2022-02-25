@@ -29,6 +29,13 @@ public class ThemeParkExample {
 
         System.out.println("rides at " + kingsIsland.getThemeParkName() +": "+ kingsIsland.getRideNames() + "\n*\n*"); // print the names from the park
 
+
+        /*
+        *   below uses the methods from each class to perform the actions from the instructions
+        *   but this is done randomly
+        *   you can manually call the methods by calling the theme park object, then the desired array list, and choose an index from the array list
+        *   after specifying the object you can call the methods
+         */
         int randomChoice = 0, otherRandomChoice = 0;
         for(int i = 0; i<2;i++)
         {
@@ -52,12 +59,12 @@ public class ThemeParkExample {
 
 
         randomChoice = (int) (Math.random()*kingsIsland.employees.size());
-        kingsIsland.removeEmployee(randomChoice); // update employees list
+        kingsIsland.removeEmployee(randomChoice); // remove employee at randomChoice index
         kingsIsland.addEmployee(new Employee("anna", "McDonalds")); // new employee is hired
 
-        System.out.println("current employees: " + kingsIsland.getEmployeeNames()); // get list of current employees
+        System.out.println("current employees: " + kingsIsland.getEmployeeNames()); // get and print the list (in string form) of current employees from the kingsIsland theme park
         System.out.println("*");
-        System.out.println("total rides: " + kingsIsland.getTotalRides());
+        System.out.println("total rides: " + kingsIsland.getTotalRides()); // get and print the number of rides from the kingsIsland theme park
 
 
     }
