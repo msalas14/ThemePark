@@ -10,8 +10,8 @@ public class Facility {
     }
     public void sell(Customer customer, Product product) {
         System.out.println(customer);//prior balance is printed
-        customer.purchase(product.productPrice);
-        System.out.println(customer.getName() + " bought " + product.productName + " from " + facilityName);
+        customer.purchase(product.getProductPrice());
+        System.out.println(customer.getName() + " bought " + product.getProductName() + " from " + facilityName);
         System.out.println(customer);//after balance is printed
     }
     public Product getProduct(int index)
